@@ -5,6 +5,6 @@ use Test::More;
 use File::ProjectHome;
 
 ok(-e File::ProjectHome->project_home)
-    or explain(File::ProjectHome->project_home);
+    or diag explain(File::ProjectHome->project_home);
 
 done_testing;

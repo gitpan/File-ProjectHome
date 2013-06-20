@@ -7,7 +7,7 @@ File::ProjectHome - Find home dir of a project
 in /home/Cside/work/Some-Project/lib/Some/Module.pm
 
     use File::ProjectHome;
-    warn File::ProjectHome->project_home; #=> /home/Cside/work/Some-Project
+    print File::ProjectHome->project_home;  #=> /home/Cside/work/Some-Project
 
 # DESCRIPTION
 

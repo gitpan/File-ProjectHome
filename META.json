@@ -53,7 +53,7 @@
    "provides" : {
       "File::ProjectHome" : {
          "file" : "lib/File/ProjectHome.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -67,5 +67,8 @@
          "web" : "https://github.com/Cside/File-ProjectHome"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02",
+   "x_contributors" : [
+      "tokubass <tomi21110@gmail.com>"
+   ]
 }

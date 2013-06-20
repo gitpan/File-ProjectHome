@@ -27,7 +27,7 @@ no_index:
 provides:
   File::ProjectHome:
     file: lib/File/ProjectHome.pm
-    version: 0.01
+    version: 0.02
 requires:
   Path::Class: 0
   perl: 5.008005
@@ -35,4 +35,6 @@ resources:
   bugtracker: https://github.com/Cside/File-ProjectHome/issues
   homepage: https://github.com/Cside/File-ProjectHome
   repository: git://github.com/Cside/File-ProjectHome.git
-version: 0.01
+version: 0.02
+x_contributors:
+  - 'tokubass <tomi21110@gmail.com>'

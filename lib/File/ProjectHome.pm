@@ -5,9 +5,9 @@ use warnings;
 use File::Spec;
 use Path::Class qw(dir);
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
-my @PROJECT_ROOT_FILES = qw(
+our @PROJECT_ROOT_FILES = qw(
     cpanfile
     .git
     .gitmodules
@@ -30,7 +30,7 @@ sub project_home {
 sub _parent {
     my $dir = shift;
     my $parent = $dir->parent;
-    return if $parent eq '/';
+    return if $parent eq File::Spec->rootdir;
     return $parent;
 }
 
@@ -48,7 +48,7 @@ File::ProjectHome - Find home dir of a project
 in /home/Cside/work/Some-Project/lib/Some/Module.pm
 
   use File::ProjectHome;
-  warn File::ProjectHome->project_home; #=> /home/Cside/work/Some-Project
+  print File::ProjectHome->project_home;  #=> /home/Cside/work/Some-Project
 
 =head1 DESCRIPTION
 
